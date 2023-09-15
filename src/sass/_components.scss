@@ -1,0 +1,74 @@
+@use "variables";
+
+@media (max-width: 599px) {
+  .navigation_primary {
+    position: fixed;
+    inset: 0 0 0 30%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    transform: translateX(100%);
+
+    transition: transform 350ms ease-out;
+  }
+
+  .navigation_primary[data-visible="true"] {
+    transform: translateX(0%);
+  }
+}
+
+.navigation_primary {
+  z-index: 1000;
+  text-align: left;
+  margin-right: -1rem;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 7.5rem;
+
+    li {
+      a {
+        color: variables.$color-light;
+        span {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+.button_explore {
+  cursor: pointer;
+  font-family: variables.$font-family-1;
+  font-size: 1.5rem;
+  color: variables.$color-dark;
+  width: 10rem;
+  aspect-ratio: 1;
+  border: none;
+  border-radius: 50%;
+  margin-top: 3.5rem;
+  background-color: variables.$color-light;
+  transition: 0.2s ease-out;
+
+  &:hover,
+  &:focus-visible {
+    outline: 4rem solid rgba(151, 151, 151, 0.5);
+  }
+}
+
+.mobile_menu {
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("../assets/shared/icon-hamburger.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1.5rem;
+  aspect-ratio: 1;
+  border: none;
+  z-index: 10000;
+}
+
+.mobile_menu[aria-expanded="true"] {
+  background-image: url("../assets/shared/icon-close.svg");
+}

@@ -1,0 +1,103 @@
+@use "../variables";
+
+.destination {
+  background-image: url("/src/assets/destination/background-destination-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  header {
+    div {
+      margin-bottom: 1rem;
+    }
+  }
+
+  main {
+    div {
+      img {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 0.5rem;
+        width: 10rem;
+        height: auto;
+      }
+    }
+
+    .navigation_destination {
+      margin-bottom: 1rem;
+
+      ul {
+        justify-content: center;
+        gap: 1rem;
+        margin-left: -2.5rem;
+
+        li {
+          &:not(.active_tab_destination):hover::after {
+            content: "";
+            position: absolute;
+            bottom: -50%;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: variables.$color-light;
+            opacity: 0.4;
+          }
+
+          a {
+            font-size: 1.05rem;
+            letter-spacing: 3px;
+            padding-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: variables.$fw-regular;
+      margin-bottom: -0.5rem;
+    }
+
+    .description_destination {
+      text-align: center;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      padding-inline: 0.5rem;
+    }
+
+    .stats {
+      gap: 1rem;
+
+      div {
+        p {
+          font-size: 1rem;
+          text-align: center;
+          letter-spacing: 1px;
+          margin-bottom: 0.5rem;
+        }
+
+        h4 {
+          text-align: center;
+          font-weight: variables.$fw-regular;
+        }
+      }
+    }
+  }
+}
+
+.active_tab_destination::after {
+  content: "";
+  position: absolute;
+  bottom: -25%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: variables.$color-light;
+}
+
+.line_divider {
+  margin: 2rem auto;
+  width: 95%;
+  height: 1px;
+  background-color: variables.$color-medium-light;
+  opacity: 0.5;
+}

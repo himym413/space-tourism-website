@@ -1,0 +1,42 @@
+@use "../variables";
+
+.home {
+  background: url("../assets/home/background-home-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media (max-width: 767px) {
+  header {
+    div {
+      padding: 1.5rem 0.5rem 0 0.5rem;
+    }
+  }
+}
+
+header {
+  div {
+    justify-content: space-between;
+  }
+}
+
+.home {
+  main {
+    line-height: 1;
+    text-align: center;
+    justify-content: space-around;
+
+    div {
+      padding: 1rem;
+
+      h5 {
+        letter-spacing: 0.25rem;
+      }
+
+      h1 {
+        margin-bottom: 1rem;
+        letter-spacing: 0.25rem;
+      }
+    }
+  }
+}

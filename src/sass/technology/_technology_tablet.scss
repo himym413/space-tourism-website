@@ -1,0 +1,44 @@
+@use "../variables";
+
+@media screen and (min-width: 600px) {
+  .technology {
+    background-image: url("/src/assets/technology/background-technology-tablet.jpg");
+
+    .technology_container {
+      .image_container {
+        height: 19.5rem;
+        margin-bottom: 3rem;
+      }
+
+      .technology_about_container {
+        .navigation_technology {
+          padding-bottom: 2rem !important;
+          ul {
+            li {
+              width: 3.75rem;
+              height: 3.75rem;
+              padding-top: 0.7rem;
+
+              a {
+                font-size: 1.5rem;
+                padding: 1.5rem;
+              }
+            }
+          }
+        }
+
+        .about_technology {
+          .subheader2 {
+            font-size: 1rem !important;
+            padding-bottom: 0.5rem !important;
+          }
+
+          .info {
+            font-size: 1rem;
+            padding-inline: 12.25rem;
+          }
+        }
+      }
+    }
+  }
+}

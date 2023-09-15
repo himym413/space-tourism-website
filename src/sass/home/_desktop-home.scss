@@ -1,0 +1,106 @@
+@use "../variables";
+
+@media (min-width: 1200px) {
+  .home {
+    background: url("../assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .button_explore {
+    width: 17.125rem;
+  }
+
+  .active_tab::after {
+    bottom: -150%;
+  }
+
+  header {
+    .logo {
+      margin: 3.25rem 0 0 2rem !important;
+    }
+
+    .navigation_primary {
+      margin-top: 3rem;
+      padding-right: 8rem !important;
+      padding-left: 3rem !important;
+      background-color: rgba(151, 151, 151, 0.2) !important;
+      backdrop-filter: blur(15px) !important;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        transform: translateX(-18rem);
+        width: 20rem;
+        height: 2px;
+        background-color: variables.$color-light;
+        opacity: 0.5;
+      }
+
+      ul {
+        gap: 3rem;
+        li {
+          &:hover::after {
+            bottom: -150% !important;
+          }
+          a {
+            font-size: 1.1rem;
+            letter-spacing: 3px;
+            span {
+              margin-right: 0.1rem;
+              display: inline !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .home {
+    main {
+      align-items: flex-end !important;
+      gap: 0rem;
+      padding-top: 0rem !important;
+      flex-direction: row !important;
+      justify-content: space-between !important;
+
+      div {
+        text-align: left;
+        width: 32%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .navigation_primary::before {
+    width: 30rem !important;
+    transform: translateX(-28rem) !important;
+  }
+}
+
+@media (min-width: 1800px) {
+  .navigation_primary::before {
+    width: 40rem !important;
+    transform: translateX(-38rem) !important;
+  }
+
+  .home {
+    main {
+      gap: 3rem;
+      margin-left: 10rem !important;
+      padding-top: 10rem !important;
+    }
+  }
+}
+
+// @media (min-width: 1800px), (min-height: 900px) {
+//   main {
+//     padding-top: 6rem !important;
+//     margin-left: 10rem !important;
+//   }
+// }

@@ -1,0 +1,93 @@
+@use "../variables";
+
+@media screen and (min-width: 1200px) {
+  .crew {
+    background-image: url("/src/assets/crew/background-crew-desktop.jpg");
+
+    main {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "heading image"
+        "about image"
+        "navigation image";
+
+      padding: 4rem 8rem 0;
+
+      .subheader2 {
+        padding: 0;
+        padding-bottom: 4rem;
+      }
+
+      .image_container {
+        height: 40rem;
+        padding-top: 45rem;
+      }
+
+      .navigation_crew {
+        padding-bottom: 5rem;
+        margin-right: auto;
+
+        ul {
+          gap: 1.5rem;
+
+          li {
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+
+      .about {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 3rem;
+
+        .subheader1 {
+          text-align: left !important;
+          padding: 0;
+        }
+
+        h4 {
+          text-align: left;
+        }
+
+        p {
+          padding-left: 0 !important;
+          padding-right: 12.5rem !important;
+          font-size: 1.15rem;
+          text-align: left;
+          line-height: 1.7;
+        }
+      }
+    }
+  }
+
+  #crew_pilot {
+    main {
+      .about {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+
+  #crew_engineer {
+    main {
+      .image_container {
+        padding-top: 50rem;
+      }
+
+      .navigation_crew {
+        padding-bottom: 8.375rem;
+      }
+
+      .about {
+        padding-bottom: 0.625rem;
+
+        p {
+          padding-right: 15.7rem !important;
+        }
+      }
+    }
+  }
+}

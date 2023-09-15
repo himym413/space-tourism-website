@@ -1,0 +1,54 @@
+@use "../variables";
+
+@media screen and (min-width: 600px) {
+  .destination {
+    background-image: url("/src/assets/destination/background-destination-tablet.jpg");
+
+    header {
+      div {
+        margin-bottom: 2rem !important;
+      }
+    }
+
+    main {
+      .left_destination {
+        .subheader2 {
+          text-align: left;
+        }
+
+        img {
+          width: 20rem;
+          padding-bottom: 2rem;
+        }
+      }
+
+      .navigation_destination {
+        margin-bottom: 2rem;
+
+        ul {
+          gap: 2.5rem;
+        }
+      }
+
+      .description_destination {
+        padding-inline: 5.5rem;
+      }
+
+      .stats {
+        flex-direction: row;
+        justify-content: center;
+        gap: 7.5rem;
+      }
+    }
+  }
+
+  .active_tab_destination::after {
+    height: 4px;
+    bottom: -50%;
+  }
+
+  .line_divider {
+    height: 2px;
+    width: 75%;
+  }
+}

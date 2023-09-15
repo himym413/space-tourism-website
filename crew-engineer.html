@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/src/assets/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="/src/sass/main.scss" />
+
+    <script defec src="/src/js/main.js"></script>
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body id="crew_engineer" class="crew">
+    <header>
+      <div class="flex">
+        <img class="logo" src="src/assets/shared/logo.svg" alt="Logo" />
+
+        <button
+          aria-controls="navigation_primary"
+          aria-expanded="false"
+          class="mobile_menu mobile-menu-toggle"
+        >
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <nav class="navigation_primary" data-visible="false">
+          <ul id="navigation_primary">
+            <li>
+              <a href="index.html" class="uppercase"
+                ><span aria-hidden="true" class="fw-bold">00</span> Home</a
+              >
+            </li>
+            <li>
+              <a href="destination-moon.html" class="uppercase"
+                ><span aria-hidden="true" class="fw-bold">01</span>
+                Destination</a
+              >
+            </li>
+            <li class="active_tab">
+              <a href="crew-commander.html" class="uppercase"
+                ><span aria-hidden="true" class="fw-bold">02</span> Crew</a
+              >
+            </li>
+            <li>
+              <a href="technology-vehicle.html" class="uppercase"
+                ><span aria-hidden="true" class="fw-bold">03</span>
+                Technology</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <p class="uppercase subheader2">
+        <span class="medium-light fw-bold" aria-hidden="true">02 </span>Meet
+        your crew
+      </p>
+      <div class="image_container image_container_engineer"></div>
+      <nav class="navigation_crew">
+        <ul class="flex">
+          <li>
+            <a href="crew-commander.html"
+              ><span class="sr-only">Commander</span></a
+            >
+          </li>
+          <li>
+            <a href="crew-specialist.html"
+              ><span class="sr-only">Specialist</span></a
+            >
+          </li>
+          <li>
+            <a href="crew-pilot.html"><span class="sr-only">Pilot</span></a>
+          </li>
+          <li class="active_tab_crew">
+            <a href="crew-engineer.html"
+              ><span class="sr-only">Engineer</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="about">
+        <p class="uppercase subheader1 medium-light text-center">
+          Flight Engineer
+        </p>
+        <h4 class="uppercase fw-regular text-center">Anousheh Ansari</h4>
+        <p class="text-center medium-light">
+          Anousheh Ansari is an Iranian American engineer and co-founder of
+          Prodea Systems. Ansari was the fourth self-funded space tourist, the
+          first self-funded woman to fly to the ISS, and the first Iranian in
+          space.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

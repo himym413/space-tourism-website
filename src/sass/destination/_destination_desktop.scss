@@ -1,0 +1,87 @@
+@use "../variables";
+
+@media screen and (min-width: 1200px) {
+  .destination {
+    background-image: url("/src/assets/destination/background-destination-desktop.jpg");
+
+    header {
+      div {
+        margin-bottom: 7rem !important;
+      }
+    }
+
+    main {
+      display: flex;
+      align-items: center;
+
+      .left_destination {
+        width: 60%;
+
+        .subheader2 {
+          margin-left: 10rem;
+          margin-bottom: 3rem;
+          margin-top: -3rem;
+        }
+
+        img {
+          width: 28rem;
+        }
+      }
+
+      .right_destination {
+        width: 40%;
+
+        .navigation_destination {
+          ul {
+            justify-content: flex-start;
+            gap: 1.5rem;
+          }
+        }
+
+        h2 {
+          text-align: left;
+        }
+
+        .description_destination {
+          text-align: left;
+          padding-left: 0;
+          padding-right: 12rem;
+          margin-bottom: 4rem;
+        }
+
+        .stats {
+          justify-content: flex-start;
+          gap: 5rem;
+        }
+      }
+    }
+  }
+
+  .line_divider {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .destination {
+    main {
+      .left_destination {
+        .subheader2 {
+          margin-left: 15rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .destination {
+    main {
+      .left_destination {
+        .subheader2 {
+          margin-left: 20rem;
+        }
+      }
+    }
+  }
+}

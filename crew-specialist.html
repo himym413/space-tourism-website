@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/src/assets/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="/src/sass/main.scss" />
+
+    <script defec src="/src/js/main.js"></script>
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body id="crew_specialist" class="crew">
+    <header>
+      <div class="flex">
+        <img class="logo" src="src/assets/shared/logo.svg" alt="Logo" />
+
+        <button
+          aria-controls="navigation_primary"
+          aria-expanded="false"
+          class="mobile_menu mobile-menu-toggle"
+        >
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <nav class="navigation_primary" data-visible="false">
+          <ul id="navigation_primary">
+            <li>
+              <a href="index.html" class="uppercase"
+                ><span aria-hidden="true" class="fw-bold">00</span> Home</a
+              >
+            </li>
+            <li>
+              <a href="destination-moon.html" class="uppercase"
+                ><span aria-hidden="true" class="fw-bold">01</span>
+                Destination</a
+              >
+            </li>
+            <li class="active_tab">
+              <a href="crew-commander.html" class="uppercase"
+                ><span aria-hidden="true" class="fw-bold">02</span> Crew</a
+              >
+            </li>
+            <li>
+              <a href="technology-vehicle.html" class="uppercase"
+                ><span aria-hidden="true" class="fw-bold">03</span>
+                Technology</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <p class="uppercase subheader2">
+        <span class="medium-light fw-bold" aria-hidden="true">02 </span>Meet
+        your crew
+      </p>
+      <div class="image_container image_container_specialist"></div>
+      <nav class="navigation_crew">
+        <ul class="flex">
+          <li>
+            <a href="crew-commander.html"
+              ><span class="sr-only">Commander</span></a
+            >
+          </li>
+          <li class="active_tab_crew">
+            <a href="crew-specialist.html"
+              ><span class="sr-only">Specialist</span></a
+            >
+          </li>
+          <li>
+            <a href="crew-pilot.html"><span class="sr-only">Pilot</span></a>
+          </li>
+          <li>
+            <a href="crew-engineer.html"
+              ><span class="sr-only">Engineer</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="about">
+        <p class="uppercase subheader1 medium-light text-center">
+          Mission Specialist
+        </p>
+        <h4 class="uppercase fw-regular text-center">Mark Shuttleworth</h4>
+        <p class="text-center medium-light">
+          Mark Richard Shuttleworth is the founder and CEO of Canonical, the
+          company behind the Linux-based Ubuntu operating system. Shuttleworth
+          became the first South African to travel to space as a space tourist.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

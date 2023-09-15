@@ -1,0 +1,71 @@
+@use "../variables";
+
+@media screen and (min-width: 600px) {
+  .crew {
+    background-image: url("/src/assets/crew/background-crew-tablet.jpg");
+
+    main {
+      grid-template-areas:
+        "heading"
+        "about"
+        "navigation"
+        "image";
+
+      .subheader2 {
+        text-align: left;
+        padding: 2rem 0 1rem 1rem;
+      }
+
+      .image_container {
+        height: 33rem;
+      }
+
+      .about {
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+  #crew_commander {
+    main {
+      .about {
+        p {
+          padding-inline: 10.5rem;
+        }
+      }
+    }
+  }
+
+  #crew_specialist {
+    main {
+      .about {
+        p {
+          padding-inline: 9rem;
+        }
+      }
+    }
+  }
+
+  #crew_pilot {
+    main {
+      .about {
+        p {
+          padding-inline: 6.8rem;
+        }
+      }
+    }
+  }
+
+  #crew_engineer {
+    main {
+      .about {
+        p {
+          font-size: 1.05rem;
+          padding-inline: 9.5rem;
+        }
+      }
+    }
+  }
+}

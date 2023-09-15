@@ -1,0 +1,16 @@
+{
+  "name": "space-tourism-website",
+  "version": "1.0.0",
+  "description": "Website for space tourism",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Igor Šešlak",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3",
+    "parcel": "^2.9.3"
+  }
+}
